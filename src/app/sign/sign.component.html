@@ -1,0 +1,18 @@
+<div class="container">
+  <form #myForm="ngForm" (ngSubmit)="MySign()">
+    <div class="form-group">
+      <label >Email address</label>
+      <input type="email" [(ngModel)] = "Email" name="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label>Password</label>
+      <input type="password" [(ngModel)] = "Password" name="password" class="form-control"placeholder="Password">
+    </div>
+    <!-- <div class="form-group form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div> -->
+    <button type="submit" class="btn btn-primary">Sign In</button>
+    <button type="submit" class="btn btn-primary">Sign Up</button>
+  </form>
+</div> 
